@@ -1,0 +1,14 @@
+Sending build context to Docker daemon  5.632kB
+Step 1/4 : FROM nodered/node-red:latest-12
+ ---> a519594642ef
+Step 2/4 : COPY package.json .
+ ---> Using cache
+ ---> 3df019d0d955
+Step 3/4 : RUN npm install --unsafe-perm --no-update-notifier --no-fund --only=production
+ ---> Using cache
+ ---> 2a99631b4993
+Step 4/4 : CMD ["npm", "start"]
+ ---> Using cache
+ ---> fb047be11662
+Successfully built fb047be11662
+Successfully tagged hcd-bops:latest

@@ -1,0 +1,4 @@
+this folder contains the node-red configuration files which are present at first startup
+these files were extracted to inject them into the containers, which exposes them to the 
+host and allows for persistent configuration management without having to build custom
+images for every actor

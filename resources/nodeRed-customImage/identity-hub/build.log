@@ -1,0 +1,11 @@
+Sending build context to Docker daemon  5.632kB
+Step 1/3 : FROM nodered/node-red:latest-12
+ ---> a519594642ef
+Step 2/3 : COPY package.json .
+ ---> Using cache
+ ---> bc28594adfad
+Step 3/3 : RUN npm install --unsafe-perm --no-update-notifier --no-fund --only=production
+ ---> Using cache
+ ---> 18d90bf04292
+Successfully built 18d90bf04292
+Successfully tagged hcd-identity-hub:latest
