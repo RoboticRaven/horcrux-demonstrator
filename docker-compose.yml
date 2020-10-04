@@ -20,7 +20,7 @@ services:
     ports: 
       - "1002:1880"
     volumes:
-      - ./identityHub/data:/data
+      - ./identity-hub/data:/data
 
   hcd-bops: 
     image: delirium/horcrux-demonstrator:bops
