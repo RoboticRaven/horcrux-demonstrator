@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "DOCKER LOGIN TOKEN: 4fe21160-51b6-4342-adab-b0577d3292dd"
 docker login -u delirium
 
 # retagging of local images

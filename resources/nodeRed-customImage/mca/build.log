@@ -2,13 +2,18 @@ Sending build context to Docker daemon  5.632kB
 Step 1/4 : FROM nodered/node-red:latest-12
  ---> a519594642ef
 Step 2/4 : COPY package.json .
- ---> Using cache
- ---> 3df019d0d955
+ ---> 3beb2b667491
 Step 3/4 : RUN npm install --unsafe-perm --no-update-notifier --no-fund --only=production
- ---> Using cache
- ---> 2a99631b4993
+ ---> Running in 38f21a7e5e13
+[91mnpm notice created a lockfile as package-lock.json. You should commit this file.
+[0madded 4 packages from 6 contributors and audited 347 packages in 4.404s
+found 4 vulnerabilities (3 moderate, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+Removing intermediate container 38f21a7e5e13
+ ---> 0d6e833d6648
 Step 4/4 : CMD ["npm", "start"]
- ---> Using cache
- ---> fb047be11662
-Successfully built fb047be11662
+ ---> Running in 04e2d4f9a1bd
+Removing intermediate container 04e2d4f9a1bd
+ ---> d5dde0f13581
+Successfully built d5dde0f13581
 Successfully tagged hcd-mca:latest
