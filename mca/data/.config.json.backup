@@ -459,6 +459,23 @@
      "file": "/usr/src/node-red/node_modules/node-red-contrib-crypto-js/cryptojs/decode.js"
     }
    }
+  },
+  "node-red-contrib-image-output": {
+   "name": "node-red-contrib-image-output",
+   "version": "0.6.3",
+   "local": false,
+   "nodes": {
+    "image": {
+     "name": "image",
+     "types": [
+      "image"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red-contrib-image-output",
+     "file": "/usr/src/node-red/node_modules/node-red-contrib-image-output/image/image.js"
+    }
+   }
   }
  },
  "_credentialSecret": "513beffaf73fb7138750ac92f7f5e856af9359c912f806600ac22074432b1fd1",
