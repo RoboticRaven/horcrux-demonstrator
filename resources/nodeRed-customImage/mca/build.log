@@ -2,18 +2,36 @@ Sending build context to Docker daemon  5.632kB
 Step 1/4 : FROM nodered/node-red:latest-12
  ---> a519594642ef
 Step 2/4 : COPY package.json .
- ---> 5c2bee932b0a
+ ---> ffb21343148a
 Step 3/4 : RUN npm install --unsafe-perm --no-update-notifier --no-fund --only=production
- ---> Running in de1ed51752f0
-[91mnpm notice created a lockfile as package-lock.json. You should commit this file.
-[0madded 5 packages from 9 contributors and audited 348 packages in 3.247s
+ ---> Running in 10f6b97ffb80
+
+> sodium-native@3.2.0 install /usr/src/node-red/node_modules/sodium-native
+> node-gyp-build "node preinstall.js" "node postinstall.js"
+
+libtool is required, but wasn't found on this system
+[91m./configure: line 5: ./configure: not found
+[0m[91m/usr/src/node-red/node_modules/sodium-native/preinstall.js:119
+    if (err) throw err
+             ^
+
+Error: ./configure exited with 127
+    at ChildProcess.<anonymous> (/usr/src/node-red/node_modules/sodium-native/preinstall.js:149:25)
+    at ChildProcess.emit (events.js:315:20)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:275:12)
+[0m[91mnpm notice created a lockfile as package-lock.json. You should commit this file.
+[0m[91mnpm WARN optional SKIPPING OPTIONAL DEPENDENCY: sodium-native@3.2.0 (node_modules/sodium-native):
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: sodium-native@3.2.0 install: `node-gyp-build "node preinstall.js" "node postinstall.js"`
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
+[0m[91m
+[0madded 112 packages from 73 contributors and audited 457 packages in 15.592s
 found 4 vulnerabilities (3 moderate, 1 high)
   run `npm audit fix` to fix them, or `npm audit` for details
-Removing intermediate container de1ed51752f0
- ---> adccc41c40dc
+Removing intermediate container 10f6b97ffb80
+ ---> cefdd82154ab
 Step 4/4 : CMD ["npm", "start"]
- ---> Running in 15e1c303de3e
-Removing intermediate container 15e1c303de3e
- ---> 26d9b7d3f21c
-Successfully built 26d9b7d3f21c
+ ---> Running in 77bf2a964c1a
+Removing intermediate container 77bf2a964c1a
+ ---> 50d2846a0cbd
+Successfully built 50d2846a0cbd
 Successfully tagged hcd-mca:latest
