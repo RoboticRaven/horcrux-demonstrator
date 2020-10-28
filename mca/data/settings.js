@@ -238,9 +238,10 @@ module.exports = {
     // can be accessed in a function block as:
     //    global.get("os")
     functionGlobalContext: {
-	require:require,
-	crypto:require('crypto-js'),
-        child_process:require('child_process'),
+	path:require('path'),
+	cryptojs:require('crypto-js'),
+	crypto:require('crypto'),
+	childprocess:require('child_process'),
     },
     // `global.keys()` returns a list of all properties set in global context.
     // This allows them to be displayed in the Context Sidebar within the editor.
