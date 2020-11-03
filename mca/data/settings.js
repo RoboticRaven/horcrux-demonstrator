@@ -242,6 +242,7 @@ module.exports = {
 	cryptojs:require('crypto-js'),
 	crypto:require('crypto'),
 	childprocess:require('child_process'),
+	wallet:require('node-red-contrib-ethr-genaddress'),
     },
     // `global.keys()` returns a list of all properties set in global context.
     // This allows them to be displayed in the Context Sidebar within the editor.
