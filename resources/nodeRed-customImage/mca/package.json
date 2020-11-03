@@ -11,6 +11,9 @@
       "jsencrypt": "^3.0.0-rc.1",
       "did-cli": "^0.6.0", 
       "node-red-contrib-crypto-js": "^0.1.1",
-      "node-red-contrib-image-output": "^0.6.2"
+      "node-red-contrib-image-output": "^0.6.2",
+      "ethereumjs-wallet": "^1.0.1",
+      "node-gyp-build": "^4.2.3",
+      "sodium-native": "^3.2.0"
     }
 }
