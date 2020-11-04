@@ -1,9 +1,17 @@
 version: "3.7"
 
 services:
-  hcd-mca:
+  hcd-mca-sp-bops:
     image: delirium/horcrux-demonstrator:mca
     ports:
       - "1000:1880"
     volumes:
       - ./mca/data:/data
+
+  hcd-bchain:
+    image: trufflesuite/ganache-cli:latest
+    ports:
+      - "8545:8545"
+    command: --accounts 2 --seed 13081985 --account_keys_path /data/accounts_and_privateKeys
+    volumes:
+      - ./ganache/data:/data 
