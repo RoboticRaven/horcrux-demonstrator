@@ -8,7 +8,8 @@ services:
       - "1000:1880"
     volumes:
       - ./mca-sp-bops/data:/data
-
+      - ./mca-sp-bops/issuer-data:/issuer-data
+      - ./mca-sp-bops/bops-data:/bops-data
   hcd-bchain:
     image: trufflesuite/ganache-cli:latest
     container_name: bchain
