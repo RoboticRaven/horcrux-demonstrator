@@ -3,15 +3,29 @@ version: "3.7"
 services:
   hcd-mca-sp-bops:
     image: delirium/horcrux-demonstrator:mca
+    container_name: mca_sp_bops
     ports:
       - "1000:1880"
     volumes:
-      - ./mca/data:/data
+      - ./mca-sp-bops/data:/data
 
   hcd-bchain:
     image: trufflesuite/ganache-cli:latest
+    container_name: bchain
     ports:
       - "8545:8545"
-    command: --accounts 2 --seed 13081985 --account_keys_path /data/accounts_and_privateKeys
+    command: --accounts 10 --seed 13081985 --account_keys_path /data/accounts_and_privateKeys
     volumes:
-      - ./ganache/data:/data 
+      - ./ganache/data:/data
+  hcd-ipfs-idHub:
+    image: ipfs/go-ipfs
+    container_name: ipfs_host
+    environment:
+      - IPFS_PROFILE=flatfs
+    ports:
+      - "4001:4001"
+      - "5001:5001"
+      - "8080:8080"
+    volumes:
+      - ./ipfs/staging:/export
+      - ./ipfs/data:/data/ipfs

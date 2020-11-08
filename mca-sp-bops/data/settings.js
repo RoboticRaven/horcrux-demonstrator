@@ -240,9 +240,9 @@ module.exports = {
     functionGlobalContext: {
 	path:require('path'),
 	cryptojs:require('crypto-js'),
-	crypto:require('crypto'),
-	childprocess:require('child_process'),
+	crypto:require('crypto'),	
 	wallet:require('node-red-contrib-ethr-genaddress'),
+	webjs:require('web3'),
     },
     // `global.keys()` returns a list of all properties set in global context.
     // This allows them to be displayed in the Context Sidebar within the editor.
