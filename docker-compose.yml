@@ -10,14 +10,6 @@ services:
       - ./mca-sp-bops/data:/data
       - ./mca-sp-bops/issuer-data:/issuer-data
       - ./mca-sp-bops/bops-data:/bops-data
-  hcd-bchain:
-    image: trufflesuite/ganache-cli:latest
-    container_name: bchain
-    ports:
-      - "8545:8545"
-    command: --accounts 10 --seed 13081985 --account_keys_path /data/accounts_and_privateKeys
-    volumes:
-      - ./ganache/data:/data
   hcd-ipfs-idHub:
     image: ipfs/go-ipfs
     container_name: ipfs_host
