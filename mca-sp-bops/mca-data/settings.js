@@ -102,7 +102,7 @@ module.exports = {
     // When httpAdminRoot is used to move the UI to a different root path, the
     // following property can be used to identify a directory of static content
     // that should be served at http://localhost:1880/.
-    //httpStatic: '/home/nol/node-red-static/',
+    httpStatic: '/static/',
 
     // The maximum size of HTTP request that will be accepted by the runtime api.
     // Default: 5mb
@@ -243,6 +243,9 @@ module.exports = {
 	crypto:require('crypto'),	
 	wallet:require('node-red-contrib-ethr-genaddress'),
 	webjs:require('web3'),
+	ethutil:require('ethereumjs-util'),
+	ethwallet:require('ethereumjs-wallet'),
+	ethersjs:require('ethers'),
     },
     // `global.keys()` returns a list of all properties set in global context.
     // This allows them to be displayed in the Context Sidebar within the editor.

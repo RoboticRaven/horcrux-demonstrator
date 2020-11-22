@@ -7,9 +7,10 @@ services:
     ports:
       - "1000:1880"
     volumes:
-      - ./mca-sp-bops/data:/data
+      - ./mca-sp-bops/mca-data:/data
       - ./mca-sp-bops/issuer-data:/issuer-data
       - ./mca-sp-bops/bops-data:/bops-data
+      - ./mca-sp-bops/static:/static
   hcd-ipfs-idHub:
     image: ipfs/go-ipfs
     container_name: ipfs_host
