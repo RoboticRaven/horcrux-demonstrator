@@ -476,6 +476,23 @@
      "file": "/usr/src/node-red/node_modules/node-red-contrib-image-output/image/image.js"
     }
    }
+  },
+  "node-red-contrib-ethr-genaddress": {
+   "name": "node-red-contrib-ethr-genaddress",
+   "version": "1.0.0",
+   "local": false,
+   "nodes": {
+    "gen-ethraddress": {
+     "name": "gen-ethraddress",
+     "types": [
+      "gen-ethraddress"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red-contrib-ethr-genaddress",
+     "file": "/usr/src/node-red/node_modules/node-red-contrib-ethr-genaddress/genaddress.js"
+    }
+   }
   }
  },
  "_credentialSecret": "513beffaf73fb7138750ac92f7f5e856af9359c912f806600ac22074432b1fd1",
@@ -491,7 +508,8 @@
      "view-show-tips": true
     }
    },
-   "menu-menu-item-sidebar": true
+   "menu-menu-item-sidebar": true,
+   "menu-menu-item-palette": false
   }
  }
 }
