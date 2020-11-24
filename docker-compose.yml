@@ -6,20 +6,20 @@ services:
     container_name: mca_sp_bops
     ports:
       - "1000:1880"
+      - "8080:8080"
+      - "4001:4001"
+      - "4002:4002"
+      - "4003:4003"
+      - "4004:4004"
+      - "4005:4005"
+      - "5001:5001"
+      - "5002:5002"
+      - "5003:5003"
+      - "5004:5004"
+      - "5005:5005"
     volumes:
       - ./mca-sp-bops/mca-data:/data
       - ./mca-sp-bops/issuer-data:/issuer-data
       - ./mca-sp-bops/bops-data:/bops-data
       - ./mca-sp-bops/static:/static
-  hcd-ipfs-idHub:
-    image: ipfs/go-ipfs
-    container_name: ipfs_host
-    environment:
-      - IPFS_PROFILE=flatfs
-    ports:
-      - "4001:4001"
-      - "5001:5001"
-      - "8080:8080"
-    volumes:
-      - ./ipfs/staging:/export
-      - ./ipfs/data:/data/ipfs
+      - ./ipfs:/ipfs
