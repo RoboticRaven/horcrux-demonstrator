@@ -251,6 +251,7 @@ module.exports = {
 	uint8arrfromstr:require('uint8arrays/from-string'),
 	md5:require('md5'),
 	cids:require('cids'),
+	fetch:require('node-fetch'),
     },
     // `global.keys()` returns a list of all properties set in global context.
     // This allows them to be displayed in the Context Sidebar within the editor.
