@@ -4,7 +4,8 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
-      "start": "node-red"
+      "start": "node-red",
+      "preinstall": "npm install -g ipfs-add-folder --ignore-scripts"
     },
     "dependencies": {
       "node-red": "^1.1.3",
