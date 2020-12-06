@@ -252,7 +252,7 @@ module.exports = {
 	md5:require('md5'),
 	cids:require('cids'),
 	fetch:require('node-fetch'),
-	ipfsimp:require('ipfs-unixfs-importer'),
+	childProcess:require('child_process'),
     },
     // `global.keys()` returns a list of all properties set in global context.
     // This allows them to be displayed in the Context Sidebar within the editor.
@@ -303,9 +303,12 @@ module.exports = {
 
     // Customising the editor
     editorTheme: {
-        projects: {
+       // projects: {
             // To enable the Projects feature, set this value to true
-            enabled: false
-        }
+         //   enabled: false
+       // }
+	page: {
+	    css: "/usr/src/node-red/node_modules/@node-red-contrib-themes/solarized-dark/theme.css"
+	}
     }
 }

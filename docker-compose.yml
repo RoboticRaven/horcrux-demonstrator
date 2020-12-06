@@ -6,6 +6,7 @@ services:
     container_name: mca_sp_bops
     ports:
       - "1000:1880"
+      - "443:443"
       - "8080:8080"
       - "4001:4001"
       - "4002:4002"
@@ -17,9 +18,11 @@ services:
       - "5003:5003"
       - "5004:5004"
       - "5005:5005"
+      - "9090:9090"
     volumes:
       - ./mca-sp-bops/mca-data:/data
       - ./mca-sp-bops/issuer-data:/issuer-data
       - ./mca-sp-bops/bops-data:/bops-data
       - ./mca-sp-bops/static:/static
+      - ./mca-sp-bops/ipfs:/root/.jsipfs
       - ./ipfs:/ipfs

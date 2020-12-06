@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
-      "start": "jsipfs daemon & node-red",
+      "start": "(jsipfs daemon&) && node-red",
       "preinstall": "npm install -g ipfs"
     },
     "peerDependencies": {
@@ -29,6 +29,7 @@
       "cids": "^1.0.2",
       "node-fetch": "^2.6.1",
       "ipfs-unixfs-importer": "^5.0.0", 
-      "child_process": "^1.0.2"
+      "child_process": "^1.0.2",
+      "linebyline": "^1.3.0"
     }
 }
