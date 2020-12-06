@@ -246,12 +246,13 @@ module.exports = {
 	ethutil:require('ethereumjs-util'),
 	ethwallet:require('ethereumjs-wallet'),
 	ethersjs:require('ethers'),
-	ipfscore:require('ipfs-core'),
+	ipfscore:require('ipfs'),
 	uint8arrconcat:require('uint8arrays/concat'),
 	uint8arrfromstr:require('uint8arrays/from-string'),
 	md5:require('md5'),
 	cids:require('cids'),
 	fetch:require('node-fetch'),
+	ipfsimp:require('ipfs-unixfs-importer'),
     },
     // `global.keys()` returns a list of all properties set in global context.
     // This allows them to be displayed in the Context Sidebar within the editor.
