@@ -25,4 +25,3 @@ services:
       - ./mca-sp-bops/bops-data:/bops-data
       - ./mca-sp-bops/static:/static
       - ./mca-sp-bops/ipfs:/root/.jsipfs
-      - ./ipfs:/ipfs
