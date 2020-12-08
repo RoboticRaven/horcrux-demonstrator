@@ -22,6 +22,7 @@ services:
     volumes:
       - ./mca-sp-bops/mca-data:/data
       - ./mca-sp-bops/issuer-data:/issuer-data
-      - ./mca-sp-bops/bops-data:/bops-data
+      - ./mca-sp-bops/bops1-data:/bops-data
       - ./mca-sp-bops/static:/static
       - ./mca-sp-bops/ipfs:/root/.jsipfs
+      - ./mca-sp-bops/bops2-data:/bops2-data

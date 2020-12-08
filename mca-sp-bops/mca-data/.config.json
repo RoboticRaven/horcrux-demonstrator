@@ -493,6 +493,23 @@
      "file": "/usr/src/node-red/node_modules/node-red-contrib-ethr-genaddress/genaddress.js"
     }
    }
+  },
+  "node-red-show-value": {
+   "name": "node-red-show-value",
+   "version": "1.0.4",
+   "local": false,
+   "nodes": {
+    "show-value": {
+     "name": "show-value",
+     "types": [
+      "show-value"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red-show-value",
+     "file": "/usr/src/node-red/node_modules/node-red-show-value/show-value.js"
+    }
+   }
   }
  },
  "_credentialSecret": "513beffaf73fb7138750ac92f7f5e856af9359c912f806600ac22074432b1fd1",
