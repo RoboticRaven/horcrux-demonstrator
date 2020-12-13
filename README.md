@@ -15,6 +15,7 @@ We developed on a virtual machine inside VMWare Workstation Pro using the (at th
 
 
 # Usage
+## Environment setup
 IMPORTANT: YOU MAY DOWNLOAD A PREPARED VM VIA THE FOLLOWING LINK:
 - https://drive.google.com/drive/folders/1SkrieIQ5_h-b7STwduGZj0KlwQwaVX0d?usp=sharing
 
@@ -23,7 +24,7 @@ Preparation: Set up a Linux environment. The following setup is recommended:
 - recommended: change keyboard layout to German (Switzerland)
 - optional: install open-vm-tools for improved UX (resolution- and clipboard-support) if scaling and copy-paste doesn't work.
 
-
+# Project setup
 1. Open a terminal
 2. Install docker if not already installed: https://docs.docker.com/engine/install/ubuntu/
 3. Install docker-compose if not already installed: https://docs.docker.com/compose/install/
