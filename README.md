@@ -83,7 +83,6 @@ You may run this software project as only of the following:
 - Proceed with instructions given in chapter ``3.2 Run the code``. 
 
 ### OPTION III: Manual setup
-#### 2.II.1. Environment setup
 Preparation: Set up a Linux environment. The following setup is recommended:
 - Ubuntu LTS on VMWare Workstation Pro 
 - recommended: change keyboard layout to German (Switzerland)
