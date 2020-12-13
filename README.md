@@ -1,5 +1,6 @@
 # HORCRUX-DEMONSTRATOR
-This repository contains:
+This repository contains a demonstrator of the cryptographic auth protocol known as 'horcrux-protocol'.
+The project mainly consists of the following parts:
 - build-artifacts used to create our customized node-red image:
 	- a dockerfile (containing the required project dependencies)
 	- a build-script to render an docker-image from the mentioned dockerfile
@@ -16,7 +17,7 @@ We developed on a virtual machine inside VMWare Workstation Pro using the (at th
 # Usage
 Preparation: Set up a Linux environment. The following setup is recommended:
 - Ubuntu LTS on VMWare Workstation Pro 
-- with open-vm-tools installed for improved UX.
+- optional: install open-vm-tools for improved UX (resolution- and clipboard-support) if scaling and copy-paste doesn't work.
 
 1. Open a terminal
 2. Install docker if not already installed: https://docs.docker.com/engine/install/ubuntu/
