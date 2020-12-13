@@ -19,6 +19,7 @@ We developed on a virtual machine inside VMWare Workstation Pro using the (at th
 IMPORTANT: YOU MAY DOWNLOAD A PREPARED VM VIA THE FOLLOWING LINK:
 - https://drive.google.com/drive/folders/1SkrieIQ5_h-b7STwduGZj0KlwQwaVX0d?usp=sharing
 	- username/pw are as follows: ``max``/``muster``
+
 Preparation: Set up a Linux environment. The following setup is recommended:
 - Ubuntu LTS on VMWare Workstation Pro 
 - recommended: change keyboard layout to German (Switzerland)
