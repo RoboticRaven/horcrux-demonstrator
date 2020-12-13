@@ -56,7 +56,8 @@ This repository contains a demonstrator of the cryptographic auth protocol known
     └── test-data				. || input data to test the flows (e.g. fingerprints)
         └── fingerprints			. |||	
 ```												
-The project mainly consists of the following parts:							
+
+The folder structure of this project has grown organically, thus not everything is optimally named. (refactoring is very tedious in node-red)
 - build-artifacts used to create our customized node-red image:							
 	- a dockerfile (containing the required project dependencies)
 	- a build-script to render an docker-image from the mentioned dockerfile
@@ -75,8 +76,8 @@ You may run this software project as only of the following:
 - Proceed with instructions given in chapter ``3.1 Project setup``.
 
 ### OPTION II: Download our fully prepared ova-based virtual machine:
-	- project folder is on the desktop, 
-	- username: max, 
+	- project folder is on the desktop (/home/max/Desktop/horcrux-demonstrator)
+	- username: max 
 	- password: muster
 	- use firefox, bookmarks for relevant endpoints have already been added to the toolbar
 - Proceed with instructions given in chapter ``3.2 Run the code``. 
@@ -99,8 +100,11 @@ Preparation: Set up a Linux environment. The following setup is recommended:
 - else you may still pull via http protocol ``git clone https://github.com/RoboticRaven/horcrux-demonstrator.git``
 
 ### 3.2 Run the code
+Some of the following commands require administrative privileges that can be given either by access control facilities of the OS, such as user/group rights or the use of ``sudo``. It is assumed that the user has no administrative privileges and must gain them by using ``sudo``.
+
+
 1. Change directory (``cd``) into the project directory
-2. Start the service by running ``sudo docker-compose up -d`` (only use sudo if you have no docker-group/user defined)
+2. Start the service by running ``sudo docker-compose up -d`` 
 3. The node-red development environment should by now be reachable via browser:
 	http://localhost:1000/
 4. For testing the functionalities the following mock end-points are available:
@@ -109,6 +113,6 @@ Preparation: Set up a Linux environment. The following setup is recommended:
 5. Under the path ``resources/test-data`` you will find some data to test-run the flows
 6. In order to see the container logs:
 	- get an overview over the currently running services
-	 ``"docker ps -a"``
+	 ``"sudo docker ps -a"``
 	- identify the containerID of the corresponding container and get the logs by running
-	 ``"docker logs <containerID>``
+	 ``"sudo docker logs <containerID>``
