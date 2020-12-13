@@ -75,7 +75,11 @@ You may run this software project as only of the following:
 - Proceed with instructions given in chapter ``3.1 Project setup``.
 
 ### OPTION II: Download our fully prepared ova-based virtual machine:
-- Proceed with instructions given in chapter ``3.2 Run the code``. (project folder is on the desktop, username: max, password: muster)
+	- project folder is on the desktop, 
+	- username: max, 
+	- password: muster
+	- use firefox, bookmarks for relevant endpoints have already been added to the toolbar
+- Proceed with instructions given in chapter ``3.2 Run the code``. 
 
 ### OPTION III: Manual setup
 #### 2.II.1. Environment setup
