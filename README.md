@@ -14,11 +14,12 @@ We developed on a virtual machine inside VMWare Workstation Pro using the (at th
 
 
 # Usage
+Preparation: Set up a Linux environment. (Recommended: Ubuntu LTS on VMWare Workstation Pro, with open-vm-tools installed for improved UX.
 1. Open a terminal
-2. Install docker if it isn't already installed: https://docs.docker.com/engine/install/ubuntu/
+2. Install docker if not already installed: https://docs.docker.com/engine/install/ubuntu/
 3. Install docker-compose if not already installed: https://docs.docker.com/compose/install/
 4. Clone the repository:
-``git clone``
+``git clone git@github.com:RoboticRaven/horcrux-demonstrator.git`` or ``git clone https://github.com/RoboticRaven/horcrux-demonstrator.git``
 5. Start the service by running
 ``docker-compose up -d``
 6. The node-red development environment should by now be reachable via browser:
