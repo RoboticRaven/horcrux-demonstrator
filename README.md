@@ -42,7 +42,7 @@ This repository contains a demonstrator of the cryptographic auth protocol known
 │   ├── mca-data				. || mobile client application directory root 
 │   │   ├── keys				. ||| identities (owned & known (public keys))
 │   │   ├── lib					. ||| node-red specific data
-│   │   │   └── flows				. ||||
+│   │   │   └── flows				. |||| (source folder of node-red)
 │   │   ├── localstorage			. ||| local storage of the mimicked device
 │   │   └── temp				. ||| temporary storage for ephemeral data
 │   │       └── 0x82CA9DAf8a81034590d79C53A4... . |||| example folder with eth-account-based naming scheme
@@ -58,15 +58,28 @@ This repository contains a demonstrator of the cryptographic auth protocol known
 ```												
 
 The folder structure of this project has grown organically, thus not everything is optimally named. (refactoring is very tedious in node-red)
-- build-artifacts used to create our customized node-red image:							
-	- a dockerfile (containing the required project dependencies)
-	- a build-script to render an docker-image from the mentioned dockerfile
-	- a script for pushing the custom-image to dockerhub
+As a consequence of this fact, the node-red specific folder under ``/mca-sp-bops/mca-data/lib`` folder is logically out of place, but there is no functional impact.
 
-- a docker-compose file:
-	- referencing our customized alpine-based node-red image
-	- defining volume mappings that represent the storage-root of the different actors
-	- port mappings for the services to be reachable on the host
+TL;DR:
+The project can be characterized as a sum of the following:
+- the contents of the base folder such as:
+	- the ``docker-compose.yml`` containing the blueprint of the service 
+	- a license file
+	- this readme.md
+	
+- a project source folder (``/mca-sp-bops/``) that also holds the ephemeral data that is created at run-time consisting of:
+	- subfolders ``bops1-data, bops2-data, ipfs, issuer-data, mca-data`` represent the file root for the corresponding actors of the protocol
+	- subfolder ``static`` containing data that is delivered to the end-user (Front-End)
+	- subfolder ``mca-data/lib`` that contains the actual node-red code
+
+- a resources folder containing the following:
+	- build-artifacts used to create our customized node-red image at ``resources/nodeRed-customImage``:							
+		- a dockerfile (containing the required project dependencies)
+		- a build-script to render an docker-image from the mentioned dockerfile
+		- a script for pushing the custom-image to dockerhub
+		- a package.json to install custom libraries via npm after it's creation (in subfolder ``mca``)
+
+
 	
 Development took place on a virtual machine inside VMWare Workstation Pro using the (at the time of development) most recent version of Ubuntu. It is recommended to the same or a comparable (*nix-like) setup.
 
