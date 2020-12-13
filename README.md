@@ -14,7 +14,10 @@ We developed on a virtual machine inside VMWare Workstation Pro using the (at th
 
 
 # Usage
-Preparation: Set up a Linux environment. (Recommended: Ubuntu LTS on VMWare Workstation Pro, with open-vm-tools installed for improved UX.
+Preparation: Set up a Linux environment. The following setup is recommended:
+- Ubuntu LTS on VMWare Workstation Pro 
+- with open-vm-tools installed for improved UX.
+
 1. Open a terminal
 2. Install docker if not already installed: https://docs.docker.com/engine/install/ubuntu/
 3. Install docker-compose if not already installed: https://docs.docker.com/compose/install/
