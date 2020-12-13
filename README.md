@@ -17,21 +17,24 @@ We developed on a virtual machine inside VMWare Workstation Pro using the (at th
 # Usage
 Preparation: Set up a Linux environment. The following setup is recommended:
 - Ubuntu LTS on VMWare Workstation Pro 
+- recommended: change keyboard layout to German (Switzerland)
 - optional: install open-vm-tools for improved UX (resolution- and clipboard-support) if scaling and copy-paste doesn't work.
+
 
 1. Open a terminal
 2. Install docker if not already installed: https://docs.docker.com/engine/install/ubuntu/
 3. Install docker-compose if not already installed: https://docs.docker.com/compose/install/
 4. Clone the repository:
 ``git clone git@github.com:RoboticRaven/horcrux-demonstrator.git`` or ``git clone https://github.com/RoboticRaven/horcrux-demonstrator.git``
-5. Start the service by running
+5. Change directory (``cd``) into the project directory
+6. Start the service by running
 ``docker-compose up -d``
-6. The node-red development environment should by now be reachable via browser:
+7. The node-red development environment should by now be reachable via browser:
 	http://localhost:1000/
-7. For testing the functionalities the following mock end-points are available:
+8. For testing the functionalities the following mock end-points are available:
 	- http-endpoint for registration (as provided in the mca flow): http://localhost:1000/register
 	- http-endpoint for login (as provided in the SP(verifier) flow): http://localhost:1000/login
-8. In order to see the container logs:
+9. In order to see the container logs:
 	- get an overview over the currently running services
 	 ``"docker ps -a"``
 	- identify the containerID of the corresponding container and get the logs by running
