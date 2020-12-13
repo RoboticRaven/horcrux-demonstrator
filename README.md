@@ -67,8 +67,8 @@ As a consequence of this fact, the node-red specific folder under ``/mca-sp-bops
 The project can be characterized as a sum of the following:
 - the contents of the base folder such as:
 	- the ``docker-compose.yml`` containing the blueprint of the service 
-	- a license file
-	- this readme.md
+	- a ``LICENSE`` file
+	- this ``README`` file
 	
 - a project source folder (``/mca-sp-bops/``) that also holds the ephemeral data that is created at run-time consisting of:
 	- subfolders ``bops1-data, bops2-data, ipfs, issuer-data, mca-data`` represent the file root for the corresponding actors of the protocol
