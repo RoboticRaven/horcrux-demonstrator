@@ -72,10 +72,10 @@ Development took place on a virtual machine inside VMWare Workstation Pro using 
 ## 2. Setup
 You may run this software project as only of the following:
 ### OPTION I: Execute as docker-image:
-Proceed with instructions given in chapter ``3.1 Project setup``.
+- Proceed with instructions given in chapter ``3.1 Project setup``.
 
 ### OPTION II: Download our fully prepared ova-based virtual machine:
-
+- Proceed with instructions given in chapter ``3.2 Run the code``. (project folder is on the desktop, username: max, password: muster)
 
 ### OPTION III: Manual setup
 #### 2.II.1. Environment setup
@@ -83,7 +83,7 @@ Preparation: Set up a Linux environment. The following setup is recommended:
 - Ubuntu LTS on VMWare Workstation Pro 
 - recommended: change keyboard layout to German (Switzerland)
 - optional: install open-vm-tools for improved UX (resolution- and clipboard-support) if scaling and copy-paste doesn't work.
-
+- Proceed with instructions given in chapter ``3.1 Project setup``.
 
 ## 3. Usage
 ### 3.1 Project setup
@@ -96,7 +96,7 @@ Preparation: Set up a Linux environment. The following setup is recommended:
 
 ### 3.2 Run the code
 1. Change directory (``cd``) into the project directory
-2. Start the service by running ``docker-compose up -d``
+2. Start the service by running ``sudo docker-compose up -d`` (only use sudo if you have no docker-group/user defined)
 3. The node-red development environment should by now be reachable via browser:
 	http://localhost:1000/
 4. For testing the functionalities the following mock end-points are available:
