@@ -39,4 +39,4 @@ Preparation: Set up a Linux environment. The following setup is recommended:
 	- get an overview over the currently running services
 	 ``"docker ps -a"``
 	- identify the containerID of the corresponding container and get the logs by running
-	 ``"docker logs \<containerID\>``
+	 ``"docker logs <containerID>``
