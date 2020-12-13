@@ -71,7 +71,7 @@ The folder structure of this project has grown organically, thus not everything 
 Development took place on a virtual machine inside VMWare Workstation Pro using the (at the time of development) most recent version of Ubuntu. It is recommended to the same or a comparable (*nix-like) setup.
 
 ## 2. Setup
-You may run this software project as only of the following:
+You may run this software project via any of the following options:
 ### OPTION I: Execute as docker-image:
 - Proceed with instructions given in chapter ``3.1 Project setup``.
 
