@@ -1,4 +1,5 @@
 # HORCRUX-DEMONSTRATOR
+## 1. Description 
 This repository contains a demonstrator of the cryptographic auth protocol known as 'horcrux-protocol'.
 The project mainly consists of the following parts:
 - build-artifacts used to create our customized node-red image:
@@ -13,34 +14,35 @@ The project mainly consists of the following parts:
 	
 We developed on a virtual machine inside VMWare Workstation Pro using the (at the time of development) most recent version of Ubuntu. It is recommended to the same or a comparable (*nix-like) setup.
 
+## 2. Setup
+### OPTION I: Download our fully prepared ova-based virtual machine:
 
-# Usage
-## Environment setup
-IMPORTANT: YOU MAY DOWNLOAD A PREPARED VM VIA THE FOLLOWING LINK:
-- https://drive.google.com/drive/folders/1SkrieIQ5_h-b7STwduGZj0KlwQwaVX0d?usp=sharing
-	- username/pw are as follows: ``max``/``muster``
 
+
+### 2.II. Setup instructions:
+#### 2.II.1. Environment setup
 Preparation: Set up a Linux environment. The following setup is recommended:
 - Ubuntu LTS on VMWare Workstation Pro 
 - recommended: change keyboard layout to German (Switzerland)
 - optional: install open-vm-tools for improved UX (resolution- and clipboard-support) if scaling and copy-paste doesn't work.
 
-## Project setup
+#### 2.II.2. Project setup
 1. Open a terminal
 2. Install docker if not already installed: https://docs.docker.com/engine/install/ubuntu/
 3. Install docker-compose if not already installed: https://docs.docker.com/compose/install/
 4. Clone the repository:
 - provided you have associated (with GitHub) ssh key: ``git clone git@github.com:RoboticRaven/horcrux-demonstrator.git`` 
 - else you may still pull via http protocol ``git clone https://github.com/RoboticRaven/horcrux-demonstrator.git``
-5. Change directory (``cd``) into the project directory
-6. Start the service by running
-``docker-compose up -d``
-7. The node-red development environment should by now be reachable via browser:
+
+## 3. Usage
+1. Change directory (``cd``) into the project directory
+2. Start the service by running ``docker-compose up -d``
+3. The node-red development environment should by now be reachable via browser:
 	http://localhost:1000/
-8. For testing the functionalities the following mock end-points are available:
+4. For testing the functionalities the following mock end-points are available:
 	- http-endpoint for registration (as provided in the mca flow): http://localhost:1000/register
 	- http-endpoint for login (as provided in the SP(verifier) flow): http://localhost:1000/login
-9. In order to see the container logs:
+5. In order to see the container logs:
 	- get an overview over the currently running services
 	 ``"docker ps -a"``
 	- identify the containerID of the corresponding container and get the logs by running
