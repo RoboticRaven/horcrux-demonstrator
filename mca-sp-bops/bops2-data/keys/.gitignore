@@ -1,6 +1,5 @@
 *
 */
 !.gitignore
-!rsa_bops_public.pem
-!rsa_issuer_public.pem
 !rsa_sharedBOPSnetworkKey_public.pem
+!rsa_sharedBOPSnetworkKey_private.pem
