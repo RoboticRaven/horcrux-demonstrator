@@ -135,4 +135,3 @@ Also notice:
 	 ``"sudo docker ps -a"``
 	- identify the containerID of the corresponding container and get the logs by running
 	 ``"sudo docker logs <containerID>``
-
