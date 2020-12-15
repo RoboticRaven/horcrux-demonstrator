@@ -129,6 +129,7 @@ Some of the following commands require administrative privileges that can be giv
 8. You are presented with a mock service allowing you to test the authentication sequence, feel free to mess around. (Be aware that you will have to re-enter the DID each time you retry the authentication process by navigating back to the login page, this is a limitation of the current implementation)
 
 Also notice:
+- If you want to see the DID-Doc, open the node-red development environment and open the debugging tab. After registering an identity there will be output rendered by a debug node named "DID-Doc CID", copy the value and append it to https://ipfs.io/ipfs/ to inspect the document. We opted against making this value visible to the end-user as per specification the user is not aware of it.
 - In order to see the container logs, which can be useful for inspecting some async logging:
 	- get an overview over the currently running services
 	 ``"sudo docker ps -a"``
