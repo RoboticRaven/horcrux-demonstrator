@@ -123,7 +123,8 @@ Some of the following commands require administrative privileges that can be giv
 4. For testing the functionalities the following mock end-points are available:
 	- http-endpoint for registration (as provided in the mca flow): http://localhost:1000/register
 	- http-endpoint for login (as provided in the SP(verifier) flow): http://localhost:1000/login
-5. Under the path ``resources/test-data`` you will find some data to test-run the flows
+	- etherscan showing the transaction state of bops1: https://ropsten.etherscan.io/address/0x9b9f73dd27f630291db86704cba29a8d9958bef8
+5. Under the path ``resources/test-data`` you will find some data to test the flows manually
 6. In order to see the container logs:
 	- get an overview over the currently running services
 	 ``"sudo docker ps -a"``
