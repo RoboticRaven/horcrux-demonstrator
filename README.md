@@ -123,9 +123,13 @@ Some of the following commands require administrative privileges that can be giv
 4. For testing the functionalities the following mock end-points are available:
 	- http-endpoint for registration (as provided in the mca flow): http://localhost:1000/register
 	- http-endpoint for login (as provided in the SP(verifier) flow): http://localhost:1000/login
-	- etherscan showing the transaction state of bops1: https://ropsten.etherscan.io/address/0x9b9f73dd27f630291db86704cba29a8d9958bef8
-5. Under the path ``resources/test-data`` you will find some data to test the flows manually
-6. In order to see the container logs:
+5. Register an identity with the testing data we provided in ``resources/test-data``
+6. Open a new page, go to etherscan and check the transactions of our BOPS1 server - yours should pop up within seconds!
+7. Once the transaction is confirmed, go back to the registration page that contained your DID, copy the full string (including the did: prefix) and either click the ``test`` link on the top right of the page, or navitage explicity to http://localhost:1000/login
+8. You are presented with a mock service allowing you to test the authentication sequence, feel free to mess around. (Be aware that you will have to re-enter the DID each time you retry the authentication process by navigating back to the login page, this is a limitation of the current implementation)
+
+Also notice:
+- In order to see the container logs, which can be useful for inspecting some async logging:
 	- get an overview over the currently running services
 	 ``"sudo docker ps -a"``
 	- identify the containerID of the corresponding container and get the logs by running
