@@ -139,4 +139,4 @@ Also notice:
 	 ``"sudo docker logs <containerID>``
 - There's a plethora of debugging information readily available at your fingertips in the node-red development environment.
 ## Known limitations
-- The ipns querying doesn't work out of the box, port-forwardings (on the executing machine's network) would be a requirement, thus we opted to query our own node. (you may query it via  the jsipfs-CLI within the container)
+- The ipns querying doesn't work out of the box in this setup. Port-forwardings (on the executing machine's network) would be a requirement, thus we opted to query our own node's name system. (you may query it via  the jsipfs-CLI within the container)
