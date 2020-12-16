@@ -90,6 +90,8 @@ You may run this software project via any of the following options:
 - Proceed with instructions given in chapter ``3.1 Project setup``.
 
 ### OPTION II: Download our fully prepared ova-based virtual machine:
+You can download our preconfigured VM from the following link: https://drive.google.com/drive/folders/1SkrieIQ5_h-b7STwduGZj0KlwQwaVX0d?usp=sharing
+
 	- project folder is on the desktop (/home/max/Desktop/horcrux-demonstrator)
 	- username: max 
 	- password: muster
