@@ -125,7 +125,7 @@ Some of the following commands require administrative privileges that can be giv
 	- http-endpoint for registration (as provided in the mca flow): http://localhost:1000/register
 	- http-endpoint for login (as provided in the SP(verifier) flow): http://localhost:1000/login
 5. Register an identity with the testing data we provided in ``resources/test-data``
-6. Open a new page, go to etherscan and check the transactions of our BOPS1 server at ```` - yours should pop up within seconds!
+6. Open a new page, go to etherscan and check the transactions of our BOPS1 server at ``https://ropsten.etherscan.io/address/0x9b9f73dd27f630291db86704cba29a8d9958bef8`` - yours should pop up within seconds!
 7. Once the transaction is confirmed, go back to the registration page that contained your DID, copy the full string (including the did: prefix) and either click the ``test`` link on the top right of the page, or navitage explicity to http://localhost:1000/login
 8. You are presented with a mock service allowing you to test the authentication sequence, feel free to mess around. (Be aware that you will have to re-enter the DID each time you retry the authentication process by navigating back to the login page, this is a limitation of the current implementation)
 
